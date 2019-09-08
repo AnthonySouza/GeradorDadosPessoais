@@ -14,7 +14,7 @@ namespace Gerador
     {
 
         string JSONSaida;
-
+        Gerador gerador;
 
         public Form1()
         {
@@ -45,8 +45,11 @@ namespace Gerador
         private void Button1_Click(object sender, EventArgs e)
         {
 
+            gerador = new Gerador();
 
 
+
+            MessageBox.Show(gerador.GerarLocal().ToString()) ;
 
         }
     }
